@@ -1,0 +1,14 @@
+.create-company {
+    @include form-layout;
+}
+
+.create-company__title {
+    padding-bottom: toRem(10);
+}
+
+
+.create-company__actions {
+    display: flex;
+    gap: toRem(20);
+    justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+.author-avatar {
+    transition-property: transform;
+    transition: .2s ease;
+
+    &--hoverable {
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}

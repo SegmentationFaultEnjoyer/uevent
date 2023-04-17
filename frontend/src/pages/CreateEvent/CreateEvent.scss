@@ -1,0 +1,52 @@
+.create-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    margin: toRem(20) 0;
+    gap: toRem(15);
+}
+
+.create-event__form {
+    @include page-section-bg;
+
+    background-color: var(--tertiary-main);
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: toRem(30);
+
+    &>* {
+        width: 70%;
+        align-self: center;
+    }
+}
+
+.create-event__actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-event__loader {
+    align-self: center;
+    width: min-content;
+}
+
+.create-event__checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.create-event__images-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-event__ai-generation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: toRem(10);
+}

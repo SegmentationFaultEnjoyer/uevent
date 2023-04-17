@@ -1,0 +1,19 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: vh(100);
+  background: rgba(var(--black-rgb), 0.5);
+  z-index: 5;
+}
+
+.modal__pane {
+  position: relative;
+  background: var(--app-bg);
+  padding: toRem(24);
+  border-radius: toRem(10);
+}

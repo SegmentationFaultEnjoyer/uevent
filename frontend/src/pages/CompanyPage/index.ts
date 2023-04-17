@@ -1,0 +1,1 @@
+export { default as CompanyDetails } from '@/pages/CompanyPage/CompanyDetails'

@@ -1,0 +1,1 @@
+export { default as EventComments } from '@/pages/EventPage/EventPageComments'

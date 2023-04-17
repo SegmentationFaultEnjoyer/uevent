@@ -1,0 +1,32 @@
+.tickets-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    padding: toRem(20);
+}
+
+.tickets-page__items {
+    display: flex;
+    padding: toRem(30);
+    flex-flow: row wrap;
+    gap: toRem(40);
+    width: 100%;
+}
+
+.tickets-page__empty {
+    text-align: center;
+    flex: 1;
+    font-size: toRem(20);
+    margin-top: toRem(40);
+    font-weight: 500;
+}
+
+.tickets-page__loader {
+    flex: 1;
+    display: grid;
+    place-content: center;
+    position: relative;
+    bottom: toRem(100);
+}

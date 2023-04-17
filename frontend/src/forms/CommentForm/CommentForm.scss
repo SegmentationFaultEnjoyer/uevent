@@ -1,0 +1,17 @@
+.comment-form {
+    @include form-layout;
+}
+
+.comment-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    gap: toRem(20);
+}
+
+.comment-form__submit-btn {
+    height: toRem(45);
+
+}

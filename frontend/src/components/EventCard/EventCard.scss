@@ -1,0 +1,84 @@
+.event-card {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(10);
+    padding: toRem(20);
+    box-shadow: toRem(-2) toRem(9) toRem(24) toRem(-12) rgba(0, 0, 0, 0.3);
+    width: toRem(245);
+    background-color: var(--tertiary-main);
+    border-radius: toRem(12);
+    border: toRem(1) solid var(--tertiary-dark);
+    transition: 0.2s ease-in-out;
+    transition-property: transform;
+    justify-content: space-between;
+
+    &--expired {
+        opacity: 0.7;
+        position: relative;
+
+        &:after {
+            content: 'Passed';
+            position: absolute;
+            top: 32%;
+            left: 28%;
+            text-transform: uppercase;
+            font-size: toRem(30);
+            font-weight: 800;
+            color: var(--info-dark);
+            -webkit-text-stroke-width: toRem(1);
+            -webkit-text-stroke-color: var(--white);
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+}
+
+
+.event-card__banner {
+    object-fit: cover;
+    object-position: top center;
+    max-height: toRem(200);
+    border-radius: toRem(12);
+    width: 100%;
+    border: toRem(1) solid var(--tertiary-dark);
+}
+
+.event-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.event-card__details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 toRem(5);
+    gap: toRem(8);
+}
+
+.event-card__details-item {
+    color: var(--primary-light);
+    font-size: toRem(18);
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 150%;
+
+
+    &--bold {
+        font-weight: 600;
+        font-size: toRem(20);
+        max-width: 70%;
+
+        @extend %text-ellipsis;
+    }
+
+    &--italic {
+        font-weight: 500;
+
+        color: var(--primary-main);
+    }
+}

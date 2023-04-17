@@ -1,0 +1,9 @@
+.company-details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: toRem(20);
+    // display: grid;
+    // grid-template-columns: repeat(2, toRem(300));
+    // grid-gap: toRem(20);
+}

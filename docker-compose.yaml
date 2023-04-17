@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: "uevent"
+      POSTGRES_USER: "uevent"
+      POSTGRES_PASSWORD: "uevent"
+    ports:
+      - "5433:5432"

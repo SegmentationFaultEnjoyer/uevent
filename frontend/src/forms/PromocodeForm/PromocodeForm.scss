@@ -1,0 +1,9 @@
+.promocode-form {
+    @include form-layout;
+}
+
+.promocodes-form__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: toRem(10);
+}

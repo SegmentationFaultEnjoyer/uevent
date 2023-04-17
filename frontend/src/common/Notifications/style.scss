@@ -1,0 +1,17 @@
+.icon-success {
+    svg {
+        fill: var(--success-light) !important;
+    }
+}
+
+.icon-info {
+    svg {
+        fill: var(--tertiary-dark) !important;
+    }
+}
+
+.icon-error {
+    svg {
+        fill: var(--error-dark) !important;
+    }
+}

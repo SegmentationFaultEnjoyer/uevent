@@ -1,0 +1,21 @@
+.promocode-info-card {
+    display: flex;
+    align-items: center;
+    gap: toRem(10);
+    width: 100%;
+    padding: toRem(10);
+    border-radius: toRem(8);
+
+    &--valid {
+        background-color: rgba(var(--success-light-rgb), 0.6);
+    }
+
+    &--invalid {
+        background-color: rgba(var(--error-light-rgb), 0.8);
+    }
+}
+
+.promocode-info-card__label {
+    font-weight: 300;
+    font-size: toRem(14);
+}

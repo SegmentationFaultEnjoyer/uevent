@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "useDefineForClassFields": true,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "node",
+      "vite/client",
+      "@types/lodash-es",
+      "@types/uuid"
+    ],
+    "paths": {
+      "@/*": ["src/*"],
+      "@api/*": ["api/*"],
+      "@config/*": ["src/config.ts"],
+      "@branding/*": ["static/branding/*"],
+      "@styles/*": ["src/styles/*"]
+    },
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src",
+  ],
+  "exclude": ["node_modules", "dist"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

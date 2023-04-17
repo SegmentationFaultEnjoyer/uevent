@@ -1,0 +1,24 @@
+.event-detail-card {
+    background-color: var(--tertiary-main);
+    border-radius: toRem(12);
+    box-shadow: toRem(-2) toRem(9) toRem(24) toRem(-12) rgba(0, 0, 0, 0.3);
+    border: toRem(1) solid var(--tertiary-dark);
+    display: flex;
+    justify-content: space-between;
+    padding: toRem(10) toRem(20);
+    min-width: toRem(160);
+    align-items: center;
+    gap: toRem(20);
+}
+
+.event-detail-card__title {
+    color: var(--secondary-dark);
+    text-transform: capitalize;
+    font-size: toRem(18);
+    font-weight: 500;
+}
+
+.event-detail-card__subtitle {
+    color: var(--secondary-dark);
+    font-size: toRem(18);
+}

@@ -1,0 +1,29 @@
+.company-contact {
+    display: flex;
+    align-items: center;
+    gap: toRem(10);
+    background-color: var(--tertiary-main);
+    padding: toRem(5) toRem(10);
+    border-radius: toRem(12);
+    min-width: toRem(250);
+    max-width: min-content;
+    box-shadow: toRem(-2) toRem(9) toRem(24) toRem(-12) rgba(0, 0, 0, 0.2);
+}
+
+.company-contact__details {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(2);
+
+    &>p {
+        line-height: 120%;
+    }
+
+    &>*:first-child {
+        font-weight: lighter;
+    }
+
+    &>*:last-child {
+        font-weight: 600;
+    }
+}

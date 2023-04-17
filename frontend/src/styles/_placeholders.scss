@@ -1,0 +1,13 @@
+%text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+%page-module {
+    margin: var(--app-padding-top);
+    padding: toRem(25);
+    border-radius: toRem(5);
+    background-color: var(--tertiary-main);
+    height: fit-content;
+}

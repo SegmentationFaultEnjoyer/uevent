@@ -1,0 +1,26 @@
+.purchase-ticket-form {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(20);
+    min-width: toRem(350);
+}
+
+.purchase-ticket-form__title {
+    margin-bottom: toRem(10);
+}
+
+.purchase-ticket-form__actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.purchase-ticket-form__loader {
+    display: grid;
+    place-content: center;
+}
+
+.purchase-ticket-form__wrong-chain {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(30);
+}

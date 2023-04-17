@@ -1,0 +1,255 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_price",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_time_start",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_time_end",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "_event_name",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_event_symbol",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_company_name",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_event_location",
+                "type": "string"
+            },
+            {
+                "internalType": "bool",
+                "name": "_is_offline_event",
+                "type": "bool"
+            },
+            {
+                "internalType": "string",
+                "name": "base_uri",
+                "type": "string"
+            }
+        ],
+        "name": "deployEvent",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            }
+        ],
+        "name": "getEventsByAddress",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "price",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "time_start",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "time_end",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "event_name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "event_symbol",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "company_name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "eventLocation",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "event_address",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "isOfflineEvent",
+                        "type": "bool"
+                    }
+                ],
+                "internalType": "struct Event.Data[]",
+                "name": "result",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            }
+        ],
+        "name": "getTicketsByAddress",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "price",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "time_start",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "time_end",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "event_name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "event_symbol",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "company_name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "eventLocation",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "event_address",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "isOfflineEvent",
+                        "type": "bool"
+                    }
+                ],
+                "internalType": "struct Event.Data[]",
+                "name": "",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]

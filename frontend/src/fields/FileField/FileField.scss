@@ -1,0 +1,41 @@
+.file-field {
+    border-radius: toRem(12);
+    border: toRem(2) dashed var(--secondary-main);
+    padding: toRem(20);
+    transition: 0.2s ease-in-out;
+    transition-property: border background-color;
+    position: relative;
+
+    &--hoverable {
+        &:hover {
+            cursor: pointer;
+            border: toRem(2) dashed var(--primary-light);
+            background-color: rgba(var(--secondary-light-rgb), 0.3);
+        }
+    }
+
+
+}
+
+.file-field__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.file-field__label {
+    color: var(--primary-main);
+    font-size: toRem(20);
+}
+
+.file-field__sublabel {
+    color: var(--primary-light);
+    font-size: toRem(14);
+    font-weight: 300;
+}
+
+.file-field__clear {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

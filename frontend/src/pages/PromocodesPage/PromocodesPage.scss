@@ -1,0 +1,64 @@
+.promocodes-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    padding: toRem(20);
+}
+
+.promocodes-page__loader {
+    flex: 1;
+    display: grid;
+    place-content: center;
+}
+
+.promocodes-page__header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.promocodes-page__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: toRem(15);
+    width: 100%;
+    margin-top: toRem(55);
+}
+
+.promocodes-page__item {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    gap: toRem(15);
+    width: 70%;
+    background-color: var(--tertiary-main);
+    padding: toRem(20);
+    border-radius: toRem(8);
+}
+
+.promocodes-page__item-action {
+    display: flex;
+    align-items: center;
+    gap: toRem(5);
+}
+
+.promocodes-page__item-value {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(8);
+
+    &>*:first-child {
+        font-weight: 300;
+    }
+
+    &>*:last-child {
+        font-weight: 500;
+    }
+}
+
+.promocode-page__load-more-btn {
+    width: 15%;
+}

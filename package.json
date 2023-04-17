@@ -1,0 +1,22 @@
+{
+  "name": "uevent",
+  "version": "1.0.0",
+  "description": "App for creating events using blockchain technologies",
+  "scripts": {
+    "packages": "yarn install && cd frontend && yarn install && cd ../backend && yarn install",
+    "dev:client": "cd frontend && vite",
+    "dev:server": "clear && cd backend && nodemon main.js run service"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.ucode.world:connect-khpi/connect-fullstack-uevent/mvoishvill.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.1.0",
+    "hardhat": "^2.13.0",
+    "nodemon": "^2.0.19",
+    "vite": "^3.1.0"
+  }
+}

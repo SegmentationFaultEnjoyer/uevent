@@ -1,0 +1,14 @@
+.confirmation-modal {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(30);
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmation-modal__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: toRem(60);
+}

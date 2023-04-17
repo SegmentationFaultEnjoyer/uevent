@@ -1,0 +1,37 @@
+.companies-page {
+    padding: toRem(40);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: toRem(10);
+    align-items: center;
+}
+
+.companies-page__metamask {
+    height: inherit;
+    display: grid;
+    place-content: center;
+    margin-top: toRem(100);
+}
+
+.companies-page__not-found {
+    padding: toRem(30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: toRem(20);
+}
+
+.companies-page__title {
+    font-size: toRem(36);
+}
+
+.companies-page__companies {
+    padding: toRem(20) 0;
+    display: flex;
+    flex-direction: column;
+    gap: toRem(30);
+    flex: 1;
+
+    @include page-section-bg;
+}
